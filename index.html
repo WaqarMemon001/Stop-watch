@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <div class="main">
+        <div class="heading">
+            <H1>Stop Watch</H1>
+        </div>
+
+        <div class="wrapper">
+            <h1 id="min">0</h1>
+            <h1 id="sec">0</h1>
+            <h1 id="msec">0</h1>
+        </div>
+        <div class="footer">
+            <button id="myBtn" onclick="start() , disableBtn()" class="btn">Start</button>
+            <button onclick="stop()" class="btn">Stop</button>
+            <button onclick="reset()" class="btn">Reset</button>
+        </div>
+        <div>
+            <button class="split_btn" id="splitBtn">Split</button>
+        </div>
+    </div> -->
+
+    <div class="container-fluid bg-dark bg-gradient w-auto h-auto">
+
+        <div class="container shadow-lg p-3 mb-5  rounded"
+            style="text-align: center; background-color: rgb(207, 183, 148);">
+            <h1>Stop Watch</h1>
+        </div>
+        <div class=" dark container text-white text-center" id="result_time">
+            <h1 class="d-inline " style="font-size: 80px;" id="hour"> 0 </h1>
+            <h1 class="d-inline " style="font-size: 70px;"> : </h1>
+            <h1 class="d-inline " style="font-size: 80px;" id="min"> 0 </h1>
+            <h1 class="d-inline " style="font-size: 70px;"> : </h1>
+            <h1 class="d-inline " style="font-size: 80px;" id="sec"> 0 </h1>
+            <h1 class="d-inline " style="font-size: 70px;" style="justify-content: space-between;"> : </h1>
+            <div class=" container text-white  ">
+                <h1 class="d-inline" style="font-size: 40px;" id="msec" style="justify-content: space-between;"> 0</h1>
+            </div>
+        </div>
+        <div class="container  text-center p-5  fs-1 ">
+            <button type="button" class="btn btn-outline-info btn-lg m-1" id="myBtn"
+                onclick="start() , disableBtn()">Start</button>
+            <button type="button" class="btn btn-outline-info btn-lg m-1 " onclick="stop()">Stop</button>
+            <button type="button" class="btn btn-outline-info btn-lg m-1" onclick="reset()">Reset</button>
+            <button type="button" class="btn btn-outline-info btn-lg m-1" onclick="add()">Split</button>
+        </div>
+    </div>
+
+    <div class="container bg-dark bg-gradient w-100 text-center">
+        <div class="container shadow-lg p-3 mb-5  rounded"
+            style="text-align: center; background-color: rgb(207, 183, 148);">
+            <h1>Split times</h1>
+        </div>
+        <ul id="ul_Split" class="ul_color">
+
+        </ul>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
